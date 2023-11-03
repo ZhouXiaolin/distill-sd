@@ -789,6 +789,7 @@ def main():
         dataset = load_dataset(
             args.dataset_name,
             data_files=['data/train-00000-of-00024.parquet'],
+            split="recorded",
             cache_dir=args.cache_dir,
         )
     else:
