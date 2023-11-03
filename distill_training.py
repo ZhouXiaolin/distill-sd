@@ -789,7 +789,9 @@ def main():
         # Downloading and loading a dataset from the hub.
         dataset = load_dataset(
             args.dataset_name,
-            data_files=['data/train-00000-of-00024.parquet','data/train-00001-of-00024.parquet'],
+            data_files=['data/train-00000-of-00024.parquet','data/train-00001-of-00024.parquet','data/train-00002-of-00024.parquet','data/train-00003-of-00024.parquet',
+                        'data/train-00004-of-00024.parquet','data/train-00005-of-00024.parquet','data/train-00006-of-00024.parquet','data/train-00007-of-00024.parquet',
+                        'data/train-00008-of-00024.parquet','data/train-00009-of-00024.parquet','data/train-00010-of-00024.parquet','data/train-00011-of-00024.parquet'],
             ignore_verifications=True,            
             cache_dir=args.cache_dir,
         )
